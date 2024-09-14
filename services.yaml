@@ -1,0 +1,232 @@
+- Last.fm:
+  - Last Track:
+      widget:
+        type: customapi
+        url: http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=<username>&api_key=<apikey>&format=json
+        refreshInterval: 10000
+        display: list
+        mappings:
+          - field:
+              recenttracks:
+                track:
+                  0:
+                    artist: "#text"
+            color:
+            additionalField:
+              field:
+                recenttracks:
+                  track:
+                    0:
+                      album: "#text"
+              color: theme
+  - Weekly Albums:
+      widget:
+        type: customapi
+        url: https://ws.audioscrobbler.com/2.0/?method=user.getweeklyalbumchart&user=<username>&api_key=<apikey>&format=json&limit=5
+        refreshInterval: 3600000
+        display: list
+        mappings:
+          - field:
+              weeklyalbumchart:
+                album:
+                  0:
+                    artist: "#text"
+            label: "#1"
+            color: white
+            additionalField:
+              field:              
+                weeklyalbumchart:
+                  album:
+                    0: name
+              color: theme
+          - field:
+              weeklyalbumchart:
+                album:
+                  1:
+                    artist: "#text"
+            label: "#2"
+            color: white
+            additionalField:
+              field:              
+                weeklyalbumchart:
+                  album:
+                    1: name
+              color: theme
+          - field:
+              weeklyalbumchart:
+                album:
+                  2:
+                    artist: "#text"
+            label: "#3"
+            color: white
+            additionalField:
+              field:              
+                weeklyalbumchart:
+                  album:
+                    2: name
+              color: theme
+          - field:
+              weeklyalbumchart:
+                album:
+                  3:
+                    artist: "#text"
+            label: "#4"
+            color: white
+            additionalField:
+              field:              
+                weeklyalbumchart:
+                  album:
+                    3: name
+              color: theme
+          - field:
+              weeklyalbumchart:
+                album:
+                  4:
+                    artist: "#text"
+            label: "#5"
+            color: white
+            additionalField:
+              field:              
+                weeklyalbumchart:
+                  album:
+                    4: name
+              color: theme
+  - Weekly Tracks:
+      widget:
+        type: customapi
+        url: http://ws.audioscrobbler.com/2.0/?method=user.getweeklytrackchart&user=<username>&api_key=<apikey>&format=json&limit=5
+        refreshInterval: 3600000
+        display: list
+        mappings:
+          - field:
+              weeklytrackchart:
+                track:
+                  0:
+                    artist: "#text"
+            label: "#1"
+            color: white
+            additionalField:
+              field:
+                weeklytrackchart:
+                  track:
+                    0: name
+              color: theme
+          - field:
+              weeklytrackchart:
+                track:
+                  1:
+                    artist: "#text"
+            label: "#2"
+            color: white
+            additionalField:
+              field:
+                weeklytrackchart:
+                  track:
+                    1: name
+              color: theme
+          - field:
+              weeklytrackchart:
+                track:
+                  2:
+                    artist: "#text"
+            label: "#3"
+            color: white
+            additionalField:
+              field:
+                weeklytrackchart:
+                  track:
+                    2: name
+              color: theme
+          - field:
+              weeklytrackchart:
+                track:
+                  3:
+                    artist: "#text"
+            label: "#4"
+            color: white
+            additionalField:
+              field:
+                weeklytrackchart:
+                  track:
+                    3: name
+              color: theme
+          - field:
+              weeklytrackchart:
+                track:
+                  4:
+                    artist: "#text"
+            label: "#5"
+            color: white
+            additionalField:
+              field:
+                weeklytrackchart:
+                  track:
+                    4: name
+              color: theme
+  - Weekly Artists:
+      widget:
+        type: customapi
+        url: http://ws.audioscrobbler.com/2.0/?method=user.getweeklyartistchart&user=<username>&api_key=<apikey>&format=json&limit=5
+        refreshInterval: 3600000
+        display: list
+        mappings:
+          - field:
+              weeklyartistchart:
+                artist:
+                  0: name
+            label: "#1"
+            color: white
+            additionalField:
+              field:
+                weeklyartistchart:
+                  artist:
+                    0: playcount
+              color: theme
+          - field:
+              weeklyartistchart:
+                artist:
+                  1: name
+            label: "#2"
+            color: white
+            additionalField:
+              field:
+                weeklyartistchart:
+                  artist:
+                    1: playcount
+              color: theme
+          - field:
+              weeklyartistchart:
+                artist:
+                  2: name
+            label: "#3"
+            color: white
+            additionalField:
+              field:
+                weeklyartistchart:
+                  artist:
+                    2: playcount
+              color: theme
+          - field:
+              weeklyartistchart:
+                artist:
+                  3: name
+            label: "#4"
+            color: white
+            additionalField:
+              field:
+                weeklyartistchart:
+                  artist:
+                    3: playcount
+              color: theme
+          - field:
+              weeklyartistchart:
+                artist:
+                  4: name
+            label: "#5"
+            color: white
+            additionalField:
+              field:
+                weeklyartistchart:
+                  artist:
+                    4: playcount
+              color: theme
