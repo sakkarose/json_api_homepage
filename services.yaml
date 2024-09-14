@@ -2,7 +2,7 @@
   - Last Track:
       widget:
         type: customapi
-        url: http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=<username>&api_key=<apikey>&format=json
+        url: http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=<username>&api_key=<apikey>&format=json&limit=1
         refreshInterval: 10000
         display: list
         mappings:
