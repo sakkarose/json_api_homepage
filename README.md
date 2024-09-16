@@ -7,7 +7,7 @@ Custom JSON API for your [homepage](https://github.com/gethomepage/homepage).
 #### Last.fm
 ![image](https://github.com/user-attachments/assets/8562edf5-ec63-4f7f-9b34-09883c01b3d9)
 #### Monkeytype
-
+WiP since I haven't reached the 2-hour limit yet.
 ### Installation
 
 1. **Get an API Key:**
