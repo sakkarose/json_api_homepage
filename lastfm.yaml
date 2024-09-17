@@ -16,8 +16,7 @@
               field:
                 recenttracks:
                   track:
-                    0:
-                      album: "#text"
+                    0: name
               color: theme
   - Weekly Albums:
       widget:
